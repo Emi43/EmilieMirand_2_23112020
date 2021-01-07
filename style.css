@@ -194,11 +194,7 @@ p
     flex-direction: row ;
     width: 100%;
     justify-content: space-between;
-}
-h2
-{
-    font-size: 1.3em;
-}     
+}    
 strong
 {
    font-weight: bold; 
@@ -231,7 +227,7 @@ section.hebergements .carte
     margin: 15px 0px;
 
 }
-section.hebergements .photos
+section.hebergements .photo
 {
     object-fit: cover;
     width: 100%;
@@ -262,7 +258,7 @@ section.hebergements .contain
 
 article.populaires
 {
-    width: 32%;
+    width: 33%;
     background-color: #f2f2f2;
     border-radius: 10px;
     padding: 30px;
@@ -286,44 +282,28 @@ article.populaires .carte
     margin: 15px 0px;
 
 }
-.photo-soleil , .photo-chambres , .photo-tout-bleu
+article.populaires .photo img
 {
-    width: 120px;
+    width: 110px;
+    height: 100%;
     border-radius:30px 0px 0px 30px ;
+    object-fit: cover;
 }
-.photo-soleil 
-{
-    background-image:url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg) ;
-    background-size: cover;
-}
-.photo-chambres
-{
-    background-image:url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg) ;
-    background-size: cover;
-}
-.photo-tout-bleu
-{
-    background-image:url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg) ;
-    background-size: cover;
-}
-.description
+article.populaires .description
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
 }
-.etoiles
+article.populaires .etoiles , section.hebergements .etoiles
 {
     padding: 5px 0px 5px 10px;
 }
-h3
+article.populaires h3 , section.hebergements h3
 {
     font-size: 1em;
     font-weight: bold;
-}
-.description h3 
-{
     padding: 5px 0px 5px 10px;
     margin: 0;
 }
@@ -331,7 +311,7 @@ p
 {
     font-weight: 500;
 }
-.description p 
+article.populaires p , section.hebergements p
 {
     padding: 5px 0px 5px 10px;
     margin: 0;
