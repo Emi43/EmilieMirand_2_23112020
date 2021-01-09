@@ -54,16 +54,21 @@ header nav li.ancre-1
 header nav li.ancre-2
 {
     font-weight: 500;
+    border-top: 3px solid transparent;
 }
  header nav li.ancre-2:hover
 {
     color: #0065FC;
-    border-top: 3px solid #0065FC ;
+    border-top: 3px solid #0065FC !important ;
 }
  header nav ul.inscrire
 {
     color: #0065FC;
     font-weight: bold;
+}
+ul.ancres , ul.inscrire
+{
+    margin-top: 0px;
 }
 main
 {
@@ -132,17 +137,19 @@ section.filtres li
 {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 10px 10px 10px 0px;
     border-radius: 30px;
     border: 3px solid #F2F2F2;
     font-weight: bold;
     border-left: none;
     padding-right: 20px;
+    background-color: transparent;
 
 }
 section.filtres h2
 {
     font-size: 1.1em;
+    margin-right: 10px;
 }
 span::before
 {
@@ -151,16 +158,14 @@ span::before
     color: #0065FC;
     border-radius: 100%;
     margin-right: 5px;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #DEEBFF;
+    width: 46px;
+    height: 46px;
     align-items: center;
     justify-content: center;
 }
 section.filtres li:hover
 {
-    background-color: blue;
-    border: 2px solid black;
+    background-color: #33ACFF;
 }
 .fa-info:before
 {
@@ -240,7 +245,7 @@ section.hebergements .photo
      color: inherit;
      width: 100%;
  }
- .plus
+ section.hebergements .plus
  {
      display: block;
      width: 100%;
@@ -294,6 +299,7 @@ article.populaires .description
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 5px;
 
 }
 article.populaires .etoiles , section.hebergements .etoiles
@@ -418,9 +424,13 @@ footer ul
 /* mobile */
 @media screen and (max-width: 767px)
 {
+    header
+    {
+        padding: 0;
+    }
     main
     {
-        padding:0;
+        padding:0px 15px;
     }
     #logo
     {
@@ -437,7 +447,6 @@ footer ul
     }
     #liens li
     {
-        padding: 20px;
         display: flex;
     }
     #liens ul.ancres
