@@ -74,10 +74,6 @@ main
 {
     padding: 0px 30px 0px 30px;   
 }
-h1
-{
-    margin: 30px 0px 8px 0px;
-}
 form
 {
     display: inline-flex;
@@ -310,10 +306,6 @@ article.populaires h3 , section.hebergements h3
     padding: 5px 0px 5px 10px;
     margin: 0;
 }
-p
-{
-    font-weight: 500;
-}
 article.populaires p , section.hebergements p
 {
     padding: 5px 0px 5px 10px;
@@ -400,7 +392,6 @@ footer
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
     padding: 30px;
     width: 100%;
 }
@@ -574,7 +565,6 @@ footer ul
     {
         flex-direction: column;
         display: flex;
-        margin-top: 20px;
     }
 }
 /*ecrans type tablette*/
